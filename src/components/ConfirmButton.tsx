@@ -1,4 +1,3 @@
-// ConfirmButton.tsx
 import React from 'react'
 
 type ConfirmButtonProps = {
@@ -17,8 +16,8 @@ const ConfirmButton: React.FC<ConfirmButtonProps> = ({
     selectedNetworks
 }) => {
     const handleConfirm = () => {
-        selectedNetworks.forEach(networkName => {
-            const message = `${creativeName}_${productName}_Responsive_${creativeType}_01_${networkName}_${geo}`
+        selectedNetworks.forEach(networkID => {
+            const message = `${creativeName}_${productName}_Responsive_${creativeType}_01_${networkID}_${geo}`
             console.log(message)
         })
     }

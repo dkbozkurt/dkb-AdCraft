@@ -11,11 +11,11 @@ const NetworkSelectionArea: React.FC<NetworkSelectionAreaProps> = ({
     selectedNetworks,
     setSelectedNetworks
 }) => {
-    const handleNetworkSelect = (networkName: string) => {
+    const handleNetworkSelect = (networkID: string) => {
         setSelectedNetworks(prev =>
-            prev.includes(networkName)
-                ? prev.filter(name => name !== networkName)
-                : [...prev, networkName]
+            prev.includes(networkID)
+                ? prev.filter(id => id !== networkID)
+                : [...prev, networkID]
         )
     }
 
@@ -28,9 +28,9 @@ const NetworkSelectionArea: React.FC<NetworkSelectionAreaProps> = ({
                 <div className="flex flex-wrap justify-center">
                     {networkOptions.map((network) => (
                         <NetworkOption
-                            key={network.networkName}
+                            key={network.networkID}
                             {...network}
-                            isSelected={selectedNetworks.includes(network.networkName)}
+                            isSelected={selectedNetworks.includes(network.networkID)}
                             onSelect={handleNetworkSelect}
                         />
                     ))}

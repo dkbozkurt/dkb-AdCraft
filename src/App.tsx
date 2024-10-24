@@ -1,10 +1,11 @@
-import Background from './components/Background.tsx'
+import React from 'react'
+import Background from './components/Background'
 
 function App() {
   return (
-
-    <Background />
-
+    <Background>
+      <p className="text-white">Your content goes here</p>
+    </Background>
   )
 }
 

@@ -1,10 +1,11 @@
 import React from 'react'
 import Background from './components/Background'
+import FileDropArea from './components/FileDropArea'
 
 function App() {
   return (
     <Background>
-      <p className="text-white">Your content goes here</p>
+      <FileDropArea />
     </Background>
   )
 }

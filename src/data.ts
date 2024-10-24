@@ -315,3 +315,59 @@ export const countryCodes = [
     'ZM',
     'ZW'
 ];
+
+export interface NetworkData {
+    networkName: string;
+    logoPath: string;
+    isSelected: boolean;
+    isEnable: boolean;
+}
+
+export const networkOptions: NetworkData[] = [
+    { networkName: 'IronSource', logoPath: '/assets/networkLogo/ironsource.svg?height=300&width=300', isSelected: false, isEnable: true },
+    { networkName: 'Unity', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Applovin', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
+    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
+    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
+    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
+    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
+    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
+    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
+    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
+    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
+    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
+    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
+    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+
+    // Add more network options as needed
+];

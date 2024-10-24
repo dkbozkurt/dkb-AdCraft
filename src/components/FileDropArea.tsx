@@ -88,7 +88,7 @@ const FileDropArea: React.FC = () => {
     }
 
     return (
-        <div className="relative mt-1 mb-10 sm:mt-6 sm:mb-20">
+        <div className="relative mt-1 mb-10 sm:mt-4 sm:mb-10">
             <h2 className="absolute -top-7 left-2 z-10 px-2 text-white text-lg font-bold text-nowrap">
                 Creative Project Folder
             </h2>

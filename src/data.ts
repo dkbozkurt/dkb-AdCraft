@@ -317,6 +317,7 @@ export const countryCodes = [
 ];
 
 export interface NetworkData {
+    networkID: string
     networkName: string;
     logoPath: string;
     isSelected: boolean;
@@ -324,50 +325,138 @@ export interface NetworkData {
 }
 
 export const networkOptions: NetworkData[] = [
-    { networkName: 'IronSource', logoPath: '/assets/networkLogo/ironsource.svg?height=300&width=300', isSelected: false, isEnable: true },
-    { networkName: 'Unity', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Applovin', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
-    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
-    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
-    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
-    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
-    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
-    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
-    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
-    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
-    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
-    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Facebook', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Google', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
-    { networkName: 'Twitter', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: false },
-    { networkName: 'LinkedIn', logoPath: '/placeholder.svg?height=50&width=50', isSelected: false, isEnable: true },
+    {
+        networkID: 'Aarki',
+        networkName: 'AARKI',
+        logoPath: '/assets/networkLogo/aarkiLogo.svg',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'AdColony',
+        networkName: 'AdColony',
+        logoPath: '/assets/networkLogo/adColonyLogo.svg',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'Adjoe',
+        networkName: 'Adjoe',
+        logoPath: '/assets/networkLogo/adjoeLogo.png',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'Applovin',
+        networkName: 'Applovin',
+        logoPath: '/assets/networkLogo/applovinLogo.svg',
+        isSelected: false,
+        isEnable: true
+    },
+    {
+        networkID: 'Appreciate',
+        networkName: 'Appreciate',
+        logoPath: '/assets/networkLogo/appreciateLogo.svg',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'Facebook',
+        networkName: 'Facebook Gaming',
+        logoPath: '/assets/networkLogo/facebookGamingLogo.svg',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'GoogleAdManager',
+        networkName: 'Google Ad Manager',
+        logoPath: '/assets/networkLogo/googleAdManagerLogo.png',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'GoogleAds',
+        networkName: 'Google Ads',
+        logoPath: '/assets/networkLogo/googleAdsLogo.png',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'Ironsource',
+        networkName: 'Ironsource',
+        logoPath: '/assets/networkLogo/ironsourceLogo.svg',
+        isSelected: false,
+        isEnable: true
+    },
+    {
+        networkID: 'Liftoff',
+        networkName: 'Liftoff',
+        logoPath: '/assets/networkLogo/liftoffLogo.svg',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'Meta',
+        networkName: 'Meta',
+        logoPath: '/assets/networkLogo/metaLogo.svg',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'Mintegral',
+        networkName: 'Mintegral',
+        logoPath: '/assets/networkLogo/mintegralLogo.svg',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'Moloco',
+        networkName: 'Moloco',
+        logoPath: '/assets/networkLogo/molocoLogo.webp',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'Snapchat',
+        networkName: 'Snapchat',
+        logoPath: '/assets/networkLogo/snapchatLogo.png',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'Tencent',
+        networkName: 'Tencent',
+        logoPath: '/assets/networkLogo/tencentLogo.svg',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'Tiktok',
+        networkName: 'Tiktok',
+        logoPath: '/assets/networkLogo/tiktokLogo.svg',
+        isSelected: false,
+        isEnable: false
+    },
+    {
+        networkID: 'Unity',
+        networkName: 'Unity Ads',
+        logoPath: '/assets/networkLogo/unityAdsLogo.svg',
+        isSelected: false,
+        isEnable: true
+    },
+    {
+        networkID: 'Vungle',
+        networkName: 'Vungle',
+        logoPath: '/assets/networkLogo/vungleLogo.svg',
+        isSelected: false,
+        isEnable: true
+    },
+    {
+        networkID: 'YouAppi',
+        networkName: 'You APPI',
+        logoPath: '/assets/networkLogo/youAppiLogo.svg',
+        isSelected: false,
+        isEnable: false
+    },
 
-    // Add more network options as needed
 ];

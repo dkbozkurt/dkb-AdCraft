@@ -1,10 +1,16 @@
-import React, { useState } from 'react'
-import NetworkOption from './NetworkOption.tsx'
+import React from 'react'
+import NetworkOption from './NetworkOption'
 import { networkOptions } from '../data'
 
-const NetworkSelectionArea: React.FC = () => {
-    const [selectedNetworks, setSelectedNetworks] = useState<string[]>([])
+type NetworkSelectionAreaProps = {
+    selectedNetworks: string[]
+    setSelectedNetworks: React.Dispatch<React.SetStateAction<string[]>>
+}
 
+const NetworkSelectionArea: React.FC<NetworkSelectionAreaProps> = ({
+    selectedNetworks,
+    setSelectedNetworks
+}) => {
     const handleNetworkSelect = (networkName: string) => {
         setSelectedNetworks(prev =>
             prev.includes(networkName)

@@ -1,12 +1,27 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { productNames, creativeTypes, countryCodes } from '../data'
 
-const NamingArea: React.FC = () => {
-    const [creativeName, setCreativeName] = useState('')
-    const [productName, setProductName] = useState('')
-    const [creativeType, setCreativeType] = useState('Playable')
-    const [geo, setGeo] = useState('ALL')
+type NamingAreaProps = {
+    creativeName: string
+    setCreativeName: React.Dispatch<React.SetStateAction<string>>
+    productName: string
+    setProductName: React.Dispatch<React.SetStateAction<string>>
+    creativeType: string
+    setCreativeType: React.Dispatch<React.SetStateAction<string>>
+    geo: string
+    setGeo: React.Dispatch<React.SetStateAction<string>>
+}
 
+const NamingArea: React.FC<NamingAreaProps> = ({
+    creativeName,
+    setCreativeName,
+    productName,
+    setProductName,
+    creativeType,
+    setCreativeType,
+    geo,
+    setGeo
+}) => {
     const handleCreativeNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value.replace(/[\s_]/g, '')
         setCreativeName(value)

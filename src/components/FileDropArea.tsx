@@ -88,12 +88,12 @@ const FileDropArea: React.FC = () => {
     }
 
     return (
-        <div className="relative mb-4">
-            <h2 className="absolute -top-5 left-2 z-10 px-2 text-white text-sm font-bold">
+        <div className="relative mt-6 mb-16">
+            <h2 className="absolute -top-7 left-2 z-10 px-2 text-white text-lg font-bold">
                 Creative Project Folder
             </h2>
             <div
-                className={`relative border-4 border-dashed border-white rounded-2xl p-8 text-center cursor-pointer ${folder ? 'border-opacity-0' : 'border-opacity-100'
+                className={`relative border-4 border-dashed border-white rounded-2xl p-16 text-center cursor-pointer ${folder ? 'border-opacity-0' : 'border-opacity-100'
                     }`}
                 onDrop={handleDrop}
                 onDragOver={(e) => e.preventDefault()}
@@ -115,7 +115,7 @@ const FileDropArea: React.FC = () => {
                         </button>
                     </div>
                 ) : (
-                    <p className="text-white">Drop your folder here or click to select</p>
+                    <p className="text-white">Drop your project folder here or click to select</p>
                 )}
             </div>
             <input

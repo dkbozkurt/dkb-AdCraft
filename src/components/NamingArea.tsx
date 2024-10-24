@@ -17,8 +17,8 @@ const NamingArea: React.FC = () => {
     }
 
     return (
-        <div className="flex flex-wrap -mx-2 mb-4">
-            <div className="w-full sm:w-4/12 px-2 mb-10 md:mb-4">
+        <div className="flex flex-wrap -mx-2 sm:mb-4">
+            <div className="w-full sm:w-4/12 px-2 mb-8 sm:mb-10 md:mb-4">
                 <div className="relative">
                     <label className="absolute -top-6 left-2 px-1 text-white text-ml font-bold">
                         Creative Name
@@ -33,7 +33,7 @@ const NamingArea: React.FC = () => {
                 </div>
             </div>
 
-            <div className="w-full sm:w-3/12 px-2 mb-10 m:mb-4">
+            <div className="w-full sm:w-3/12 px-2 mb-8 sm:mb-10 m:mb-4">
                 <div className="relative">
                     <label className="absolute -top-6 left-2 px-1 text-white text-ml font-bold">
                         Product Name
@@ -53,7 +53,7 @@ const NamingArea: React.FC = () => {
                 </div>
             </div>
 
-            <div className="w-full sm:w-3/12 px-2 mb-10 md:mb-4">
+            <div className="w-full sm:w-3/12 px-2 mb-8 sm:mb-10 md:mb-4">
                 <div className="relative">
                     <label className="absolute -top-6 left-2 px-1 text-stone-100 text-ml font-bold">
                         Creative Type
@@ -72,7 +72,7 @@ const NamingArea: React.FC = () => {
                 </div>
             </div>
 
-            <div className="w-full sm:w-2/12 px-2 mb-10 md:mb-4">
+            <div className="w-full sm:w-2/12 px-2 mb-8 sm:mb-10 md:mb-4">
                 <div className="relative">
                     <label className="absolute -top-6 left-2 px-1 text-white text-ml font-bold">
                         GEO

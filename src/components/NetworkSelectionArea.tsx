@@ -8,7 +8,7 @@ const NetworkSelectionArea: React.FC = () => {
             <h2 className="text-white text-ml font-bold mb-1 px-4 text-lg">
                 Network Options
             </h2>
-            <div className="bg-white bg-opacity-20 rounded-xl p-4 h-[500px] max-h-[500px] overflow-y-auto">
+            <div className="bg-white bg-opacity-20 rounded-xl p-4 h-[20vh] sm:h-[40vh] md:h-[30vh] lg:h-[20vw] max-h-[500px] overflow-y-auto">
                 <div className="flex flex-wrap">
                     {squares.map((_, index) => (
                         <div

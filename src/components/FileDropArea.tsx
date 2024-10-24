@@ -1,6 +1,13 @@
 import React, { useState, useRef } from 'react'
 import { Folder, X, Loader } from 'lucide-react'
 
+declare module 'react' {
+    interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
+        directory?: string;
+        webkitdirectory?: string;
+    }
+}
+
 const FileDropArea: React.FC = () => {
     const [folder, setFolder] = useState<string | null>(null)
     const [isLoading, setIsLoading] = useState(false)
@@ -82,8 +89,8 @@ const FileDropArea: React.FC = () => {
 
     return (
         <div className="relative mb-4">
-            <h2 className="absolute -top-3 left-2 z-10 px-2 text-white text-sm font-bold">
-                Select Path or Drag and Drop
+            <h2 className="absolute -top-5 left-2 z-10 px-2 text-white text-sm font-bold">
+                Creative Project Folder
             </h2>
             <div
                 className={`relative border-4 border-dashed border-white rounded-2xl p-8 text-center cursor-pointer ${folder ? 'border-opacity-0' : 'border-opacity-100'
@@ -116,8 +123,8 @@ const FileDropArea: React.FC = () => {
                 ref={fileInputRef}
                 onChange={handleFileInputChange}
                 className="hidden"
-                webkitdirectory="true"
-                directory="true"
+                webkitdirectory=""
+                directory=""
             />
         </div>
     )

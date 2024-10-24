@@ -88,12 +88,12 @@ const FileDropArea: React.FC = () => {
     }
 
     return (
-        <div className="relative mt-6 mb-16">
-            <h2 className="absolute -top-7 left-2 z-10 px-2 text-white text-lg font-bold">
+        <div className="relative mt-1 mb-10 sm:mt-2 sm:mb-16">
+            <h2 className="absolute -top-7 left-2 z-10 px-2 text-white text-lg font-bold text-nowrap">
                 Creative Project Folder
             </h2>
             <div
-                className={`relative border-4 border-dashed border-white rounded-2xl p-16 text-center cursor-pointer ${folder ? 'border-opacity-0' : 'border-opacity-100'
+                className={`relative border-4 border-dashed border-white rounded-2xl pb-16 pt-14 sm:pt-16 text-center max-h-40 cursor-pointer ${folder ? 'border-opacity-0' : 'border-opacity-100'
                     }`}
                 onDrop={handleDrop}
                 onDragOver={(e) => e.preventDefault()}
